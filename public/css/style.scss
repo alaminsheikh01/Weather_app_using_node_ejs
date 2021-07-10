@@ -1,9 +1,85 @@
-body {
-  background-color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.div_custom {
-  p {
-    color: white;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  background: #fff;
+  max-width: 22rem;
+  margin: 4rem auto;
+}
+
+header {
+  background: #111;
+  height: 3rem;
+  width: 100%;
+  position: relative;
+
+  .compass-icon {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%);
+    border-radius: 50%;
+  }
+}
+
+.weather-title {
+  margin: 2rem 0;
+  text-align: center;
+
+  h1 {
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+}
+
+form {
+  padding: 0.5rem;
+  input {
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    text-align: center;
+    border-bottom: 1px solid #807a7a;
+  }
+}
+
+.result {
+  text-align: center;
+  .temp {
+    font-size: 2rem;
+    margin-top: 2rem;
+    position: relative;
+    &::after {
+      content: "0";
+      position: absolute;
+      font-size: 15px;
+      top: -5px;
+      right: 7rem;
+    }
+  }
+  .icon-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon {
+      margin-right: 1rem;
+    }
+  }
+  .city {
+    font-size: 1rem;
   }
 }
