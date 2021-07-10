@@ -9,6 +9,8 @@
 
 then `cd <project folder name>`
 
+`npm install` // for install all package
+
 Make sure you have `npm i nodemon -g` or local `npm i nodemon -d`
 
 `npm start`
