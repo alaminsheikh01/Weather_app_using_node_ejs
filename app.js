@@ -1,9 +1,11 @@
 const express = require("express");
 
 const app = express();
+require("dotenv").config();
 
 // Middleware
 app.use(express.static("public"));
+app.use(express.urlencoded({ extended: true }));
 
 // Use view engine
 app.set("view engine", "ejs");
